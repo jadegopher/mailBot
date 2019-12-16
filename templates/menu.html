@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>EmailBot</title>
+  <link rel = "shortcut icon" href = "{{url_for('static', filename='images/icon.ico')}}" type = "image/x-icon">
+  <link rel = "stylesheet" href = "{{url_for('static', filename='style.css')}}">
+</head>
+
+<body class = "body">
+	<form action="" method="POST" enctype=multipart/form-data>
+		<input class = "input" type = "text" placeholder = "sender_email@example.com" name = "sender_email">
+		<div>
+			<input class = "input" type = "text" placeholder = "receiver_email@example.com" name = "receiver_email">
+		</div>
+		<div>
+			<label class = "label">Add file
+				<input class = "input" type="file" name="emails">
+			</label>
+		</div>
+		<div>
+			<a class="butn" href="{{url_for('showTable')}}">Show stat</a>
+			<input class="butn" type = "submit" value = "Send" name = "send_button">
+		</div>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>EmailBot</title>
+  <link rel = "shortcut icon" href = "{{url_for('static', filename='images/icon.ico')}}" type = "image/x-icon">
+  <link rel = "stylesheet" href = "{{url_for('static', filename='style.css')}}">
+</head>
+
+<body class = "body">
+	<table>
+		<tr><th>№</th></th><th>Email hash</th><th>Read</th><th>Link</th></tr> <!--ряд с ячейками заголовков-->
+	{% for user in users %}
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{user[0]}}</td>
+			<td>{{user[1]}}</td>
+			<td>{{user[2]}}</td>
+		</tr> <!--ряд с ячейками тела таблицы-->
+	{% endfor %}
+	</table>
+</body>

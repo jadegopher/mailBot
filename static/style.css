@@ -1,0 +1,66 @@
+.body {
+	background-color: #121212;
+}
+
+/*Стиль для кнопки
+purple = "#BB91ED"
+grey = "#1E1E1E"
+darkGrey = "#121212"*/
+.butn
+{
+	font-size: 20px;
+	font-family: sans-serif;
+	margin-left: 20px;
+	margin-top: 10px;
+	padding: 5px;
+	background-color: #bb91ed;
+	text-decoration: none; /* убирать подчёркивание у ссылок */
+	user-select: none; /* убирать выделение текста */
+	border: none;
+	outline: none;
+	color: #ffffff;
+}
+
+th {
+	font-size: 20px;
+	font-family: sans-serif;
+	padding: 5px;
+	color: #bb91ed;
+}
+
+td {
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #ffffff;
+}
+
+.label{
+	margin-left: 20px;
+	margin-top: 10px;
+	padding: 5px;
+	background:#bb91ed; 
+	font-size: 20px;
+	font-family: sans-serif;
+	display: table;
+	color: #ffffff;
+}
+
+.input[type="file"] {
+	display: none;
+}
+
+/*Стиль для поля ввода имени и фамилии*/
+.input
+{
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 295px;
+	height: 30px;
+	padding-left: 5px;
+	background-color: #121212;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #bb91ed;
+	color: #ffffff;
+}
